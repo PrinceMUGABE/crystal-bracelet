@@ -42,3 +42,9 @@ html {
 }
 
 }
+
+.navbar-logo {
+  width: 20px;
+  height: auto;
+  filter: brightness(0.9); /* Makes the logo slightly darker if needed */
+}

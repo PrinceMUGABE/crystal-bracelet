@@ -7,7 +7,7 @@ import {
   EyeSlashIcon,
 } from "@heroicons/react/20/solid";
 import axios from "axios";
-import loginImage from "../../assets/pictures/coaster2.jpg";
+import loginImage from "../../assets/pictures/bracelet1.png";
 
 const Login = () => {
   const navigate = useNavigate();

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
-import loginImage from "../../assets/pictures/img3.jpg";
+import loginImage from "../../assets/pictures/bracelet2.jpg";
 
 const ResetPassword = () => {
   const navigate = useNavigate();

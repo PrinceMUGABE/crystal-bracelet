@@ -6,7 +6,7 @@ import { BsEvStationFill } from "react-icons/bs";
 import { GrUserPolice } from "react-icons/gr";
 import { MdPolicy } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../../assets/pictures/logo.png";
+import Logo from "../../assets/pictures/logo_lil.jpeg";
 
 function Sidebar() {
   const [activeLink, setActiveLink] = useState(null);

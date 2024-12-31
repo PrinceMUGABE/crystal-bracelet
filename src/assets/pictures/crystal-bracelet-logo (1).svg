@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Outer circle -->
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#1a2937" stroke-width="6"/>
+  
+  <!-- Inner decorative circle -->
+  <circle cx="200" cy="200" r="170" fill="none" stroke="#1a2937" stroke-width="2" stroke-dasharray="6,6"/>
+  
+  <!-- Crystal symbol -->
+  <path d="M200 100 L160 150 L200 200 L240 150 Z" fill="#1a2937"/>
+  <path d="M160 150 L200 200 L140 180 Z" fill="#1a2937"/>
+  <path d="M240 150 L200 200 L260 180 Z" fill="#1a2937"/>
+  
+  <!-- Lock symbol for security -->
+  <path d="M190 220 L210 220 L210 240 L190 240 Z" fill="#1a2937"/>
+  <path d="M185 220 C185 210 215 210 215 220" fill="none" stroke="#1a2937" stroke-width="4"/>
+  
+  <!-- Company name -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#1a2937" font-weight="bold">
+    Crystal Bracelet Ltd
+  </text>
+  
+  <!-- Tagline -->
+  <text x="200" y="310" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#1a2937" font-weight="600">
+    CBL
+  </text>
+  
+  <!-- Location -->
+  <text x="200" y="335" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1a2937">
+    Kigali, Rwanda
+  </text>
+</svg>

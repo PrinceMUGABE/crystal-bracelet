@@ -45,47 +45,47 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const hasErrors = Object.values(errors).some((error) => error);
-        const hasEmptyFields = Object.values(formData).some((field) => !field.trim());
-        if (hasErrors || hasEmptyFields) {
-            setMessage('Please fix the errors and fill in all required fields.');
-            return;
-        }
-        try {
-            const response = await axios.post('http://127.0.0.1:8000/contact/', formData);
-            if (response.status === 200) {
-                setMessage('Message sent successfully');
-                setFormData({
-                    names: '',
-                    email: '',
-                    subject: '',
-                    description: ''
-                });
-            }
-        } catch (error) {
-            if (error.response) {
-                setMessage(error.response.data.error || 'Failed to send message');
-            } else {
-                setMessage('Failed to send message');
-            }
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const hasErrors = Object.values(errors).some((error) => error);
+    //     const hasEmptyFields = Object.values(formData).some((field) => !field.trim());
+    //     if (hasErrors || hasEmptyFields) {
+    //         setMessage('Please fix the errors and fill in all required fields.');
+    //         return;
+    //     }
+    //     try {
+    //         const response = await axios.post('http://127.0.0.1:8000/contact/', formData);
+    //         if (response.status === 200) {
+    //             setMessage('Message sent successfully');
+    //             setFormData({
+    //                 names: '',
+    //                 email: '',
+    //                 subject: '',
+    //                 description: ''
+    //             });
+    //         }
+    //     } catch (error) {
+    //         if (error.response) {
+    //             setMessage(error.response.data.error || 'Failed to send message');
+    //         } else {
+    //             setMessage('Failed to send message');
+    //         }
+    //     }
+    // };
 
     return (
-        <section id="contact">
-            <div className="container">
+        <section id="contact" className="bg-gray-100">
+            <div className="container bg-gray-100 py-12 rounded-lg">
                 <h2
                     data-aos="fade-up"
-                    className='text-headingColor font-[700] text-[2.5rem] mb-8 text-center'>Get in touch
+                    className='text-headingColor font-[700] text-[2.5rem] mb-8 text-center text-black dark:text-black'>Get in touch
                 </h2>
                 <div className='md:flex justify-center items-center'>
                     <div
                         data-aos="fade-left"
-                        className='w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 px-4 lg:px-8 py-8 rounded-lg'>
-                        <form className='w-full' onSubmit={handleSubmit}>
-                            {message && <div className="mb-5 text-red-500">{message}</div>}
+                        className='w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-50 px-4 lg:px-8 py-8 rounded-lg'>
+                        <form className='w-full'>
+                            {message && <div className="mb-5 text-green-500">{message}</div>}
                             <div className="mb-5">
                                 <input
                                     type="text"
@@ -93,7 +93,7 @@ const Contact = () => {
                                     value={formData.names}
                                     onChange={handleChange}
                                     placeholder='Enter your name'
-                                    className='w-full p-3 focus:outline-none rounded-[5px]'
+                                    className='w-full text-gray-700 p-3 focus:outline-none rounded-[5px] border border-gray-300'
                                 />
                                 {errors.names && <p className="text-red-500 text-sm">{errors.names}</p>}
                             </div>
@@ -104,7 +104,7 @@ const Contact = () => {
                                     value={formData.email}
                                     onChange={handleChange}
                                     placeholder='your email @gmail.com'
-                                    className='w-full p-3 focus:outline-none rounded-[5px]'
+                                    className='w-full text-gray-700 p-3 focus:outline-none rounded-[5px] border border-gray-300'
                                 />
                                 {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                             </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                                     value={formData.subject}
                                     onChange={handleChange}
                                     placeholder='Subject'
-                                    className='w-full p-3 focus:outline-none rounded-[5px]'
+                                    className='w-full text-gray-700 p-3 focus:outline-none rounded-[5px] border border-gray-300'
                                 />
                                 {errors.subject && <p className="text-red-500 text-sm">{errors.subject}</p>}
                             </div>
@@ -127,12 +127,12 @@ const Contact = () => {
                                     value={formData.description}
                                     onChange={handleChange}
                                     placeholder='Write your message'
-                                    className='w-full p-3 focus:outline-none rounded-[5px]'
+                                    className='w-full text-gray-700 p-3 focus:outline-none rounded-[5px] border border-gray-300'
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className='flex items-center justify-center gap-1 w-full p-3 focus:outline-none rounded-[5px] bg-gray-500 text-white hover:bg-headingColor ease-linear duration-150'>
+                                className='flex items-center justify-center gap-1 w-full p-3 focus:outline-none rounded-[5px] bg-blue-950 text-white hover:bg-gray-600 ease-linear duration-150'>
                                 <i className="ri-mail-send-line text-2xl"></i>Send Message
                             </button>
                         </form>

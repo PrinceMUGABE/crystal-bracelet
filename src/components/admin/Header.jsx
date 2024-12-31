@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import navImage from "../../assets/pictures/img2.jpg"; // Nav background image
+import navImage from "../../assets/pictures/bracelet2.jpg"; // Nav background image
 
 const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);

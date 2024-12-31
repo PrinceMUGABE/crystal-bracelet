@@ -5,7 +5,7 @@ import axios from 'axios';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import Webcam from 'react-webcam';
-import loginImage from '../../assets/pictures/abanyabuzuma2.jpg'; // Assuming the path to the image
+import loginImage from '../../assets/pictures/bracelet2.jpg'; // Assuming the path to the image
 
 const Register = () => {
   const navigate = useNavigate();
