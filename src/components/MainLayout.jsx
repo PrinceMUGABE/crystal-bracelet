@@ -9,19 +9,16 @@ import About from "./about/About.jsx";
 import Contact from "./contact/Contact.jsx";
 import Partners from "./paterner/Patterners.jsx";
 
-
 const MainLayout = () => {
-
-
   return (
     <>
       <Navbar />
       <Hero />
-     <About />
+      {/* <BrandsLogo /> */}
       <Services />
+      <About />
       <Partners />
       <Contact />
-      
       <Footer />
     </>
   );

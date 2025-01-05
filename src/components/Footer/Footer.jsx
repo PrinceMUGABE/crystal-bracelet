@@ -74,8 +74,8 @@ const Footer = () => {
       </section>xa
 
       {/* Copyright Section */}
-      <div className="bg-gray-700 py-4 text-center text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Volcano Expense Pro. All Rights Reserved.</p>
+      <div className="bg-black py-4 text-center text-white">
+        <p>&copy; {new Date().getFullYear()} Crystal Bracelet Rwanda. All Rights Reserved.</p>
       </div>
     </div>
   );
