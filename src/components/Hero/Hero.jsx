@@ -59,7 +59,7 @@ const Hero = () => {
           >
             <button
               onClick={handleGetStarted}
-              className="primary-btn bg-white text-black hover:bg-gray-700 hover:text-white"
+              className="primary-btn bg-sky-600 text-white hover:bg-black hover:text-white"
             >
               Learn More
             </button>
