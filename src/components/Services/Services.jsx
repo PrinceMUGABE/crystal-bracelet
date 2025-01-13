@@ -5,28 +5,28 @@ import { Home, Navigation, CreditCard, Map, ChevronLeft, ChevronRight } from "lu
 const skillsData = [
   {
     name: "Home Detention Monitoring",
-    icon: <Home className="w-8 h-8 text-black" />,
+    icon: <Home className="w-8 h-8 text-sky-600" />,
     link: "#",
     description: "We provide continuous home detention monitoring to ensure individuals stay within the boundaries of their release agreement. Our advanced technology tracks their movements in real time, offering peace of mind to both clients and authorities.",
     aosDelay: "0",
   },
   {
     name: "Real-Time Tracking",
-    icon: <Navigation className="w-8 h-8 text-black" />,
+    icon: <Navigation className="w-8 h-8 text-sky-600" />,
     link: "#",
     description: "With our real-time tracking system, clients and authorities can access up-to-the-minute updates on the detainee's status and location. We ensure full transparency and compliance with the terms of the release agreement.",
     aosDelay: "300",
   },
   {
     name: "Fair Payment Agreement",
-    icon: <CreditCard className="w-8 h-8 text-black" />,
+    icon: <CreditCard className="w-8 h-8 text-sky-600" />,
     link: "#",
     description: "Our payment system is designed to be fair and transparent, ensuring that both the company and the client are satisfied with the terms. We offer flexible payment options based on the individual's situation and the service provided.",
     aosDelay: "500",
   },
   {
     name: "Accessible Prison Information",
-    icon: <Map className="w-8 h-8 text-black" />,
+    icon: <Map className="w-8 h-8 text-sky-600" />,
     link: "#",
     description: "We provide clients with real-time access to important prison-related information. This includes data about the detainee's accessibility, status, and any changes to their conditions, helping both clients and authorities stay informed.",
     aosDelay: "700",
@@ -108,7 +108,7 @@ const Services = () => {
                   className="card space-y-3 sm:space-y-4 p-4"
                 >
                   <div>{skill.icon}</div>
-                  <h1 className="text-lg font-semibold text-black">{skill.name}</h1>
+                  <h1 className="text-lg font-semibold text-sky-600">{skill.name}</h1>
                   <p className="text-gray-600 dark:text-gray-400">{skill.description}</p>
                 </div>
               ))}
@@ -117,7 +117,7 @@ const Services = () => {
             <div className="flex justify-end items-center space-x-4 mt-8">
               <button 
                 onClick={() => currentPage > 1 && paginate(currentPage - 1)}
-                className={`p-2 rounded-full ${currentPage === 1 ? 'text-gray-300' : 'text-primary hover:bg-gray-200'}`}
+                className={`p-2 rounded-full ${currentPage === 1 ? 'text-gray-300' : 'text-sky-600 hover:bg-gray-200'}`}
                 disabled={currentPage === 1}
               >
                 <ChevronLeft className="w-6 h-6" />
@@ -125,7 +125,7 @@ const Services = () => {
 
               <button 
                 onClick={() => currentPage < totalPages && paginate(currentPage + 1)}
-                className={`p-2 rounded-full ${currentPage === totalPages ? 'text-gray-300' : 'text-primary hover:bg-gray-200'}`}
+                className={`p-2 rounded-full ${currentPage === totalPages ? 'text-gray-300' : 'text-sky-600 hover:bg-gray-200'}`}
                 disabled={currentPage === totalPages}
               >
                 <ChevronRight className="w-6 h-6" />
@@ -141,7 +141,7 @@ const Services = () => {
           >
             <button 
               onClick={handleGetStarted}
-              className="primary-btn bg-blue-950 hover:bg-gray-700 hover:text-white"
+              className="primary-btn bg-sky-600 hover:bg-black hover:text-white"
             >
               Get Started
             </button>

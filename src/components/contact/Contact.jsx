@@ -132,7 +132,7 @@ const Contact = () => {
                             </div>
                             <button
                                 type="submit"
-                                className='flex items-center justify-center gap-1 w-full p-3 focus:outline-none rounded-[5px] bg-blue-950 text-white hover:bg-gray-600 ease-linear duration-150'>
+                                className='flex items-center justify-center gap-1 w-full p-3 focus:outline-none rounded-[5px] bg-sky-600 text-white hover:bg-black ease-linear duration-150'>
                                 <i className="ri-mail-send-line text-2xl"></i>Send Message
                             </button>
                         </form>

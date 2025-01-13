@@ -59,20 +59,20 @@ function About() {
                     </div>
                     <div data-aos="fade-left" className="flex flex-col gap-4">
                         <div className="p-4 border-l-4 border-gray-700">
-                            <h3 className="text-2xl font-semibold mb-2 text-black">Who We Are</h3>
-                            <p className="text-sm dark:text-slate-800">
+                            <h3 className="text-2xl font-semibold mb-2 text-sky-600">Who We Are</h3>
+                            <p className="text-sm dark:text-gray-400">
                                 We are a justice-driven company focused on providing secure home detention services to individuals under legal supervision. Our mission is to collaborate with legal authorities to ensure that detainees remain within the boundaries of their release agreements, utilizing advanced tracking technology and transparent systems for monitoring and reporting.
                             </p>
                         </div>
                         <div className="p-4 border-l-4 border-gray-700">
-                            <h3 className="text-2xl font-semibold mb-2 text-black">Vision</h3>
-                            <p className="text-sm dark:text-slate-800">
+                            <h3 className="text-2xl font-semibold mb-2 text-sky-600">Vision</h3>
+                            <p className="text-sm dark:text-gray-400">
                                 Our vision is to become the leading provider of secure home detention services in East Africa, enabling individuals to serve their time within the safety of their homes while ensuring full compliance with justice regulations. We aim to expand our services regionally, contributing to fair and humane treatment within the legal system.
                             </p>
                         </div>
                         <div className="p-4 border-l-4 border-gray-700">
-                            <h3 className="text-2xl font-semibold mb-2 text-black">Mission</h3>
-                            <p className="text-sm dark:text-slate-800">
+                            <h3 className="text-2xl font-semibold mb-2 text-sky-600">Mission</h3>
+                            <p className="text-sm dark:text-gray-400">
                                 Our mission is to offer reliable, affordable, and efficient home detention services, ensuring both detainees and authorities are informed and engaged through real-time tracking and accessible data. We strive to maintain high standards of integrity, fairness, and transparency in every aspect of our operations, building trust with clients, families, and justice institutions.
                             </p>
                         </div>

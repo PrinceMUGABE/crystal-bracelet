@@ -23,7 +23,7 @@ const Navbar = () => {
   const handleLoginClick = () => navigate("/login");
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-10 w-full bg-white text-black">
+    <div className="fixed top-0 left-0 right-0 z-10 w-full bg-white text-sky-600">
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
           {/* Logo section */}
@@ -44,7 +44,7 @@ const Navbar = () => {
                 <li key={id} className="py-4">
                   <a
                     href={link}
-                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500"
+                    className="text-lg font-medium hover:text-black py-2 hover:border-b-2 hover:border-black transition-colors duration-500"
                   >
                     {name}
                   </a>

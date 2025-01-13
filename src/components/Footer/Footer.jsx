@@ -24,7 +24,7 @@ const FooterLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-blue-950 text-white">
+    <div className="bg-sky-600 text-white">
       <section className="container py-8">
         <div className="flex flex-wrap justify-between items-start gap-8 py-5">
           {/* Company Details */}
@@ -81,7 +81,7 @@ const Footer = () => {
       </section>
 
       {/* Copyright Section */}
-      <div className="bg-black py-4 text-center text-white">
+      <div className="bg-black py-2 text-center text-white">
         <p>&copy; {new Date().getFullYear()} CBL Rwanda. All Rights Reserved.</p>
       </div>
     </div>
