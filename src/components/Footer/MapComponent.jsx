@@ -12,7 +12,7 @@ const MapComponent = () => {
 
     // Initialize the map
     const map = L.map("map", {
-      center: [1.9441, 29.8739], // Coordinates for Rwanda
+      center: [-1.908585181820936, 30.06428949699932], // New coordinates for the center of the map
       zoom: 8, // Initial zoom level
     });
 
@@ -22,10 +22,10 @@ const MapComponent = () => {
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(map);
 
-    // Add a marker at a specific location (e.g., Kigali, Rwanda)
-    L.marker([1.9441, 29.8739])
+    // Add a marker at the new location
+    L.marker([-1.908585181820936, 30.06428949699932])
       .addTo(map)
-      .bindPopup("<b>Kigali</b><br>Capital of Rwanda.")
+      .bindPopup("<b>Our Location</b><br>.")
       .openPopup();
   }, []); // Empty dependency array ensures this effect runs only once
 
