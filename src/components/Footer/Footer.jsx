@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import MapComponent from "./MapComponent"; // Import the MapComponent you created
 
 const FooterLinks = [
@@ -25,35 +25,35 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <div className="bg-sky-600 text-white">
-      <section className="container py-8">
+      <section id="footer" className="container py-8">
         <div className="flex flex-wrap justify-between items-start gap-8 py-5">
           {/* Company Details */}
           <div className="flex-1 min-w-[250px] py-8 px-4">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-white">
-             Our Contact
+              Contact Us
             </h1>
-      
             <p className="mt-4 text-white">
-              <strong>Phone:</strong> +250 783 251 199
-              
+              <a href="tel:+250783251199" className="flex items-center gap-2">
+                <FaPhoneAlt size={20} /> +250 783 251 199
+              </a>
             </p>
             <p className="mt-4 text-white">
-              <strong>Phone:</strong> +250 788 457 408
-              
+              <a href="tel:+250788457408" className="flex items-center gap-2">
+                <FaPhoneAlt size={20} /> +250 788 457 408
+              </a>
             </p>
             <p className="mt-2 text-white">
-              <strong>Email:</strong> princemugabe568@gmail.com
+              <a href="mailto:princemugabe568@gmail.com" className="flex items-center gap-2">
+                <FaEnvelope size={20} /> princemugabe568@gmail.com
+              </a>
             </p>
-            
-            
           </div>
-          
 
+          {/* Location Details */}
           <div className="flex-1 min-w-[250px] py-8 px-4">
-          <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-white">
-            Our Location
+            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 text-white">
+              <FaMapMarkerAlt size={24} /> Our Location
             </h1>
-        
             <p className="mt-4 text-white">
               <strong>Kigali, Rwanda</strong>
             </p>
@@ -66,9 +66,7 @@ const Footer = () => {
             <p className="mt-2 text-white">
               <strong>KG 774 st </strong>
             </p>
-            
           </div>
-
 
           {/* Map Section */}
           <div className="flex-1 min-w-[250px] py-8 px-4">

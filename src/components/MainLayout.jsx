@@ -6,7 +6,7 @@ import BrandsLogo from "./BrandsLogo/BrandsLogo.jsx";
 import Services from "./Services/Services";
 import Footer from "./Footer/Footer";
 import About from "./about/About.jsx";
-import Contact from "./contact/Contact.jsx";
+// import Contact from "./contact/Contact.jsx";
 import Partners from "./paterner/Patterners.jsx";
 import WhatsAppButton from "./WhatsAppButton.jsx";
 
@@ -20,7 +20,7 @@ const MainLayout = () => {
       <About />
       <Services />
       <Partners />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
 
       {/* WhatsApp Button */}
